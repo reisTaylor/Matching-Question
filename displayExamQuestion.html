@@ -1,0 +1,77 @@
+<template>
+    <lightning-card title    ="Please Choose Your Question, Then Match With The Corresponding Answer" 
+                    icon-name="custom:custom63">
+        <div class="slds-p-vertical_x-small">
+                <lightning-combobox
+                    name       ="Question"
+                    label      ="Question"
+                    placeholder="Choose Question"
+                    value      ={value}
+                    onchange   ={handleChange}
+                    options    ={items}>
+                </lightning-combobox>
+                <p></p>
+                <lightning-combobox
+                    name       ="Answer"
+                    label      ="Answer"
+                    placeholder="Choose Answer"
+                    value      ={valueAnswer}
+                    onchange   ={handleChange}
+                    options    ={ansItems}>
+                </lightning-combobox>
+                <lightning-formatted-text title="Chosen Key" 
+                                          value={selectedValue}>
+                </lightning-formatted-text>
+        </div>
+    </lightning-card>
+    <lightning-card title    ="And Now Choose Your Second Question and Corresponding Answer" 
+                    icon-name="custom:custom63">
+        <div class="slds-p-vertical_x-small">
+                <lightning-combobox
+                    name       ="Question"
+                    label      ="Question"
+                    placeholder="Choose Question"
+                    value      ={value}
+                    onchange   ={handleChange}
+                    options    ={items}>
+                </lightning-combobox>
+                <p></p>
+                <lightning-combobox
+                    name       ="Answer"
+                    label      ="Answer"
+                    placeholder="Choose Answer"
+                    value      ={valueAnswer}
+                    onchange   ={handleChange}
+                    options    ={ansItems}>
+                </lightning-combobox>
+                <lightning-formatted-text title="Chosen Key" 
+                                          value={selectedValue}>
+                </lightning-formatted-text>
+        </div>
+    </lightning-card>
+    <lightning-card title    ="And Again for Your Final Matching Question and Answer" 
+                    icon-name="custom:custom63">
+        <div class="slds-p-vertical_x-small">
+                <lightning-combobox
+                    name       ="Question"
+                    label      ="Question"
+                    placeholder="Choose Question"
+                    value      ={value}
+                    onchange   ={handleChange}
+                    options    ={items}>
+                </lightning-combobox>
+                <p></p>
+                <lightning-combobox
+                    name       ="Answer"
+                    label      ="Answer"
+                    placeholder="Choose Answer"
+                    value      ={valueAnswer}
+                    onchange   ={handleChange}
+                    options    ={ansItems}>
+                </lightning-combobox>
+                <lightning-formatted-text title="Chosen Key" 
+                                          value={selectedValue}>
+                </lightning-formatted-text>
+        </div>
+    </lightning-card>
+</template>
